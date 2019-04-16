@@ -3,10 +3,6 @@ body {
     background-color: #F2FFFC;
     font-size: 120%;
     line-height: 1.5;
-    background-repeat: no-repeat;
-    background-size: 80% 5px;
-    background-position: 50% 50%;
-    background-attachment: fixed;
 }
 
 h1,
@@ -18,7 +14,7 @@ h2,
 h1 {
     text-transform: uppercase;
     font-size: 3em;
-    text-shadow: 5px 5px #000;
+    text-shadow: 3px 3px #000;
 }
 
 .titulo-principal {
@@ -62,7 +58,6 @@ main p {
 }
 
 .rodape-pagina {
-    
     color: #F2FFFC;
     padding: 1em;
     clear: both;
@@ -71,16 +66,15 @@ main p {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    background-image: radial-gradient(ellipse at left bottom,
-    rgba(60, 29, 61, 0.8),
-    rgba(60, 29, 61, 0.8) 65%,
-    black 65%,
-    black 70%,
-    transparent 70%,
-    transparent);
-    width:100%;
-    background-size: 25% 100%;
     background-repeat: no-repeat;
+    text-shadow: 1px 1px black;
+    background-image: radial-gradient(ellipse at left bottom,
+        rgba(60, 29, 61, 0.8),
+        rgba(60, 29, 61, 0.8) 65%,
+        black 65%,
+        black 70%,
+        transparent 70%);
+    background-size: 25% 100%;
 }
 
 .container {
@@ -147,4 +141,3 @@ main {
     right: 0;
     height: 300px;
 }
-
