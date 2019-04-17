@@ -116,7 +116,7 @@ em {
 }
 
 main {
-    width: 80%;
+    width: calc(100% - 0.9*300px);
     float: left;
     padding-bottom: 4em;
 }
@@ -129,7 +129,7 @@ main {
 }
 
 .navegacao-site {
-    width: 20%;
+    width: calc(0.9*300px);
     float: right;
     position: relative;
     top: 300px;
@@ -181,4 +181,25 @@ footer a:focus {
     bottom: 0;
     left: 0;
     transform: translateY(.5em) rotate(45deg);
+}
+label[for="nome"] {
+    position: relative;
+}
+label[for="nome"]:after {
+    content: "";
+    background-color: #666;
+    background-repeat: no-repeat;
+    background-image: url(../img/usuario.png);
+    background-size: 50% 50%;
+    width: 2em;
+    height: 2em;
+    background-position: center;
+    position: absolute;
+    top: 100%;
+    left:0;
+}
+#nome {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
 }

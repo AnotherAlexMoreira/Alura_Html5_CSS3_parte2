@@ -13,37 +13,38 @@
 	<body>
 		<main>
 			<h1 class="titulo-principal">Contato</h1>
-
 			<div class="container">
-				<form>
-					<fieldset>
-						<legend>Dados pessoais</legend>
-						<label for="nome">Nome:</label>
-						<input id="nome" type="text" name="nome-contato" placeholder="Seu nome aqui" autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
-						<label for="email">Email:</label>
-						<input id="email" type="email" name="email-contato" placeholder="Digite seu e-mail" required>
-					</fieldset>
-						
-					<fieldset>
-						<legend>Assunto:</legend>
-						<label>
-							<input type="radio" name="assunto" value="consult">
-							Consultoria
-						</label>
-						<label>
-							<input type="radio" name="assunto" value="blog">
-							Blog
-						</label>
-						<label>
-							<input type="radio" name="assunto" value="outro" id="outro">
-							Outro
-						</label>
-					</fieldset>
-					<label for="msg">Mensagem:</label>
-    				<textarea id="msg" name="msg" placeholder="Digite aqui sua mensagem"></textarea>
-					<button type="submit">Enviar</strong></button>
-				</form>
-			</div>
+					<form>
+						<fieldset>
+							<legend>Seus dados</legend>
+							<label class="com-icone" for="nome">Nome completo</label>
+							<input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+							<label class="com-icone" for="email">E-mail</label>
+							<input id="email" type="email" name="email" required placeholder="seu@email.com">
+						</fieldset>
+						<fieldset>
+							<legend>Assunto</legend>
+							<label>
+								<input type="radio" name="assunto" value="Blog">
+								Blog
+							</label>
+							<label>
+								<input type="radio" name="assunto" value="Serviço">
+								Serviço
+							</label>
+							<fieldset>
+								<input type="radio" name="assunto" value="Outro" id="outro">
+								<label for="outro">
+									Outro
+								</label>
+								<input type="text" name="outro-assunto">
+							</fieldset>
+						</fieldset>
+						<label for="mensagem">Mensagem</label>
+						<textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+						<button type="submit">Enviar mensagem</button>
+					</form>
+				</div>
 		</main>
 		<img src="img/eu.jpg" alt="Foto de João da Silva" class="minha-foto">
 		<aside class="navegacao-site">
