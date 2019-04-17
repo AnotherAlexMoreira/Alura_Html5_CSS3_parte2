@@ -4,7 +4,10 @@
 	width: 30ch;
 	box-sizing: border-box;
 	margin: 1em 2em;
-	padding: 1em;
+    padding: 1em;
+    transition: 1s;
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 1s, 0s;
 }
 
 .citacao-bio:nth-of-type(odd) {
@@ -35,6 +38,7 @@ cite {
 .citacao-bio:hover,
 .citacao-bio:focus {
     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+    transition-delay: 0s, 1s;
 }
 
 .citacao-bio:nth-of-type(odd):hover,
@@ -90,4 +94,22 @@ cite {
 }
 .habilidades [rowspan] {
     vertical-align: middle;
+}
+.saudacao em {
+    animation: flutua 1s infinite;
+    position: relative;
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+.saudacao em {
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
 }
